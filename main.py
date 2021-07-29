@@ -78,7 +78,6 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     ops = args.add + args.sub + args.mul + args.div
-    # [1, 3, 4, 6]
     res = sol_finder(ops)(list(map(Fraction, args.lst)))
     if args.target:
         print(f"{args.target}")
